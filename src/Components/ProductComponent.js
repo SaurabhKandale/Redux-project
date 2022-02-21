@@ -8,10 +8,10 @@ const ProductComponent = () => {
 
     const renderList = products.map((data) => {
         return (
-            <div className="four wide column" key={data.id}>
+            <div className="four wide column my-7" key={data.id}>
                 <Link to={`/product/${data.id}`} >
-                    <div className="ui link cards">
-                        <div className="card" >
+                    <div className="ui link cards transition-all shadow-xl hover:bg-indigo-600 hover:shadow-2xl rounded-xl ">
+                        <div className="card rounded-3xl  " >
                             <div className="image">
                                 <img src={data.image} alt="" />
                             </div>

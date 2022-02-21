@@ -38,12 +38,12 @@ const ProductDetail = () => {
               <img className="ui fluid image" src={product.image} />
             </div>
             <div className="column rp">
-              <h1>{product.title}</h1>
-              <h2>
+              <h1 className="my-10 text-2xl">{product.title}</h1>
+              <h2 className="my-10">
                 <a className="ui teal tag label">${product.price}</a>
               </h2>
-              <h3 className="ui brown block header">{product.category}</h3>
-              <p>{product.description}</p>
+              <h3 className="ui brown block header my-8">{product.category}</h3>
+              <p className="text-md py-10">{product.description}</p>
               <div className="ui vertical animated button" tabIndex="0">
                 <div className="hidden content">
                   <i className="shop icon"></i>

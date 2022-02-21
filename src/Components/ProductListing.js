@@ -20,7 +20,7 @@ const ProductListing = ()=>{
     useEffect(()=>{fetchProducts()},[products]);
 
     return (
-        <div className="ui grid container">
+        <div className="ui grid container ">
             <ProductComponent />
         </div>
     )
