@@ -26,33 +26,23 @@ const ProductDetail = () => {
 
     return(
         
-    <div className="ui grid container">
+    <div className="container p-4 mx-auto">
     {product.length === 0 ? (
       <div>...Loading</div>
     ) : (
-      <div className="ui placeholder segment">
-        <div className="ui two column stackable center aligned grid">
-          <div className="ui vertical divider">AND</div>
-          <div className="middle aligned row">
-            <div className="column lp">
-              <img className="ui fluid image" src={product.image} />
+      <div className="grid grid-cols-2 items-center border-2 border-black p-3 bg-gradient-to-l from-slate-300 shadow-2xl rounded-xl">
+        <div className="p-8">
+              <img className="object-contain h-96 mx-auto" src={product.image} />
             </div>
-            <div className="column rp">
-              <h1 className="my-10 text-2xl">{product.title}</h1>
+            <div className="border-l-2 border-violet-300 pl-5">
+              <h1 className="my-10 text-3xl">{product.title}</h1>
               <h2 className="my-10">
-                <a className="ui teal tag label">${product.price}</a>
+                <a className="font-semibold text-2xl">${product.price}</a>
               </h2>
-              <h3 className="ui brown block header my-8">{product.category}</h3>
-              <p className="text-md py-10">{product.description}</p>
-              <div className="ui vertical animated button" tabIndex="0">
-                <div className="hidden content">
-                  <i className="shop icon"></i>
-                </div>
-                <div className="visible content">Add to Cart</div>
-              </div>
+              <h3 className="my-3">{product.category}</h3>
+              <p className="text-md py-5">{product.description}</p>
+              <div className="block"><button className="py-2 px-4 bg-slate-400 transition-all hover:bg-slate-300 rounded-md border-2 border-slate-500 hover:border-2 hover:border-black">Add to Cart</button></div>
             </div>
-          </div>
-        </div>
       </div>
     )}
   </div>

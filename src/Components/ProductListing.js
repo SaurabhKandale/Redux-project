@@ -20,7 +20,7 @@ const ProductListing = ()=>{
     useEffect(()=>{fetchProducts()},[products]);
 
     return (
-        <div className="ui grid container ">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <ProductComponent />
         </div>
     )
