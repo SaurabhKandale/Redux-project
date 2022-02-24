@@ -30,11 +30,11 @@ const ProductDetail = () => {
     {product.length === 0 ? (
       <div>...Loading</div>
     ) : (
-      <div className="grid grid-cols-2 items-center border-2 border-black p-3 bg-gradient-to-l from-slate-300 shadow-2xl rounded-xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center border-2 border-black p-3 bg-gradient-to-l from-slate-300 shadow-2xl rounded-xl">
         <div className="p-8">
               <img className="object-contain h-96 mx-auto" src={product.image} />
             </div>
-            <div className="border-l-2 border-violet-300 pl-5">
+            <div className="border-t-2 border-violet-300 lg:border-t-0 lg:border-l-2 pl-5">
               <h1 className="my-10 text-3xl">{product.title}</h1>
               <h2 className="my-10">
                 <a className="font-semibold text-2xl">${product.price}</a>
